@@ -24,3 +24,10 @@ function complete(){
   clearInterval(timer);
   timer = null;
 }
+
+
+const chk = document.getElementById('checkbox__themeSwitch');
+
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('dark');
+});
