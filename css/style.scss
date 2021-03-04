@@ -1,0 +1,112 @@
+@import '_normalize.scss';
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+body {
+  font-size: 16px;
+  background: #dfe4ea;
+}
+
+.webDevFinal{
+  opacity: 0;
+  transition: all 1s ease;
+  margin-top: -50px;
+}
+
+.fade{
+  opacity: 1;
+  margin-top: 0;
+}
+
+main{
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.myName{
+  color: #2f3542;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 4em;
+  margin: 0rem;
+}
+
+.webDev {
+  color: #2f3542;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 2em; 
+  margin: 0.5rem 0.2rem;
+}
+
+
+/* .scrolldown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid #2f3542;
+  border-right: 2px solid #2f3542;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+
+.scrolldown:nth-child(1){
+  transform: translate(-15px, -15px);
+}
+
+.scrolldown:nth-child(2){
+  transform: translate(0, 0);
+}
+
+.scrolldown:nth-child(3){
+  transform: translate(15px, 15px);
+}
+
+@keyframes animmate{
+  0%{
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+
+  25%{
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+} */
+
+.darkTheme{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.label_themeSwitch{
+  background: #111;
+  height: 26px;
+  width: 50px;
+  border-radius: 50px;
+  display: flex;
+  
+}
+
+.checkbox__themeSwitch{
+  opacity: 0;
+}
