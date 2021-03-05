@@ -26,8 +26,46 @@ function complete(){
 }
 
 
-const chk = document.getElementById('checkbox__themeSwitch');
+
+
+
+/* const chk = document.getElementById('checkbox__themeSwitch');
 
 chk.addEventListener('change', () => {
-	document.body.classList.toggle('dark');
-});
+	document.body.classList.toggle('darkmode');
+}); */
+
+
+
+
+
+
+
+
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.getElementById('checkbox__themeSwitch');
+
+const enableDarkMode = () => {
+  document.body.classList.add("darkmode");
+  document.getElementById('checkbox__themeSwitch').checked = true;
+  localStorage.setItem("darkMode", "enabled");
+}
+
+const disableDarkMode = () => {
+  document.body.classList.remove("darkmode");
+  document.getElementById('checkbox__themeSwitch').checked = false;
+  localStorage.setItem("darkMode", null);
+}
+
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener('change', () => {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
+    enableDarkMode();
+  }else{
+    disableDarkMode();
+  }
+})

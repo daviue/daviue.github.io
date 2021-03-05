@@ -380,7 +380,7 @@ body {
 }
 
 /* line 9, style.scss */
-body.dark {
+body.darkmode {
   background: #2f3542;
 }
 
@@ -430,12 +430,12 @@ main {
 }
 
 /* line 52, style.scss */
-body.dark .myName {
+body.darkmode .myName {
   color: #dfe4ea;
 }
 
 /* line 56, style.scss */
-body.dark .webDev {
+body.darkmode .webDev {
   color: #dfe4ea;
 }
 

@@ -6,7 +6,7 @@ body {
   transition: background 0.2s linear;
 }
 
-body.dark{
+body.darkmode{
   background: #2f3542;
 }
 
@@ -49,11 +49,11 @@ main{
   margin: 0.5rem 0.2rem;
 }
 
-body.dark .myName{
+body.darkmode .myName{
   color: #dfe4ea;
 }
 
-body.dark .webDev{
+body.darkmode .webDev{
   color: #dfe4ea;
 }
 
