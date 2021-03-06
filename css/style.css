@@ -399,21 +399,28 @@ body.darkmode {
 
 /* line 24, style.scss */
 main {
-  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* line 31, style.scss */
+/* line 30, style.scss */
 .container-main {
+  height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
 /* line 38, style.scss */
+.euSou {
+  display: inline-block;
+  color: #2f3542;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+}
+
+/* line 45, style.scss */
 .myName {
   color: #2f3542;
   font-family: 'Ubuntu', sans-serif;
@@ -421,78 +428,33 @@ main {
   margin: 0rem;
 }
 
-/* line 45, style.scss */
+/* line 52, style.scss */
 .webDev {
   color: #2f3542;
   font-family: 'Ubuntu', sans-serif;
   font-size: 2em;
   margin: 0.5rem 0.2rem;
+  display: flex;
+  justify-content: flex-end;
 }
 
-/* line 52, style.scss */
+/* line 62, style.scss */
 body.darkmode .myName {
   color: #dfe4ea;
 }
 
-/* line 56, style.scss */
+/* line 66, style.scss */
 body.darkmode .webDev {
   color: #dfe4ea;
 }
 
-/* .scrolldown {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  width: 40px;
-  height: 40px;
-  transform: translateY(-80px) translateX(-50%) rotate(45deg);
-}
-
-.scrolldown span{
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  border-bottom: 2px solid #2f3542;
-  border-right: 2px solid #2f3542;
-  animation: animate 1.5s linear infinite;
-  opacity: 0;
-}
-
-.scrolldown:nth-child(1){
-  transform: translate(-15px, -15px);
-}
-
-.scrolldown:nth-child(2){
-  transform: translate(0, 0);
-}
-
-.scrolldown:nth-child(3){
-  transform: translate(15px, 15px);
-}
-
-@keyframes animmate{
-  0%{
-    top: -5px;
-    left: -5px;
-    opacity: 0;
-  }
-
-  25%{
-    top: 0px;
-    left: 0px;
-    opacity: 1;
-  }
-} */
-/* line 108, style.scss */
+/* line 71, style.scss */
 .darkTheme {
   display: flex;
   justify-content: flex-end;
 }
 
-/* line 113, style.scss */
+/* line 76, style.scss */
 .label_themeSwitch {
   background-color: #111;
   border-radius: 50px;
@@ -507,7 +469,7 @@ body.darkmode .webDev {
   margin: 5px 5px 0 0;
 }
 
-/* line 127, style.scss */
+/* line 90, style.scss */
 .label_themeSwitch .ball__themeSwitch {
   background-color: #fff;
   border-radius: 50%;
@@ -520,23 +482,38 @@ body.darkmode .webDev {
   transition: transform 0.2s linear;
 }
 
-/* line 139, style.scss */
+/* line 102, style.scss */
 .checkbox__themeSwitch {
   opacity: 0;
   position: absolute;
 }
 
-/* line 144, style.scss */
+/* line 107, style.scss */
 .checkbox__themeSwitch:checked + .label_themeSwitch .ball__themeSwitch {
   transform: translateX(29px);
 }
 
-/* line 148, style.scss */
+/* line 111, style.scss */
 .fa-moon {
   color: #f1c40f;
 }
 
-/* line 152, style.scss */
+/* line 115, style.scss */
 .fa-sun {
   color: #f39c12;
+}
+
+@media screen and (max-width: 435px) {
+  /* line 120, style.scss */
+  .myName {
+    text-align: center;
+  }
+
+  /* line 124, style.scss */
+  .webDev {
+    font-size: 2em;
+    letter-spacing: 1px;
+    margin: 0;
+    justify-content: center;
+  }
 }
