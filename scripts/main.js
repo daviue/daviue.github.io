@@ -1,5 +1,5 @@
 /* ANIMAÇÃO INICIAL */
-const text = document.querySelector('.myName');
+const text = document.querySelector('.webDev');
 const strText = text.textContent;
 const splitText = strText.split("");
 text.textContent = "";
@@ -8,30 +8,30 @@ text.textContent = "";
 //   text.innerHTML += `<span class="webDevFinal">` + splitText[i] + "</span>"
 // }
 
-splitText.forEach( (element,index) => {
+splitText.forEach((element, index) => {
   text.innerHTML += `<span class="webDevFinal">` + splitText[index] + "</span>"
 })
 
 let char = 0;
 let timer = setInterval(onTick, 70)
 
-function onTick(){
+function onTick() {
   const span = text.querySelectorAll('span')[char];
   span.classList.add('fade');
   char++
-  if(char === splitText.length){
+  if (char === splitText.length) {
     complete();
     return;
   }
 }
 
-function complete(){
+function complete() {
   clearInterval(timer);
   timer = null;
 }
 
 /* THEME SWITCH */
-let darkMode = localStorage.getItem("darkMode");
+/* let darkMode = localStorage.getItem("darkMode");
 const darkModeToggle = document.querySelector('#checkbox__themeSwitch');
 
 const enableDarkMode = () => {
@@ -54,7 +54,7 @@ darkModeToggle.addEventListener('change', () => {
   darkMode = localStorage.getItem("darkMode");
   if (darkMode !== "enabled") {
     enableDarkMode();
-  }else{
+  } else {
     disableDarkMode();
   }
-})
+}) */

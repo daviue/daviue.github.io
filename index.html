@@ -7,51 +7,98 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- stylesheets -->
-    <link rel="shortcut icon" href="./source/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./sources/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/normalize.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
+  </head>
+  <body>
+    <header>
+      <div id="particles-js">
+        <div class="introSite">
+          <div class="container-main">
+            <span class="myName">Davi Rodrigues</span>
+              <div class="webDev__container">
+                <span class="webDev">Web Developer</span>
+              </div>
+          </div>
+        
+          <div class="scrolldown">
+            <i class="fas fa-angle-double-down"></i>
+          </div>
+        </div>
+      </header>
 
+      <main class="conteudoSite">
+        <div class="sobreMim">
+          <div class="container__sobre">
+            <div class="container__texto">
+              <span class="texto__titulo">Opa, eu sou Davi Rodrigues</span>
+              <span class="texto__sobre">Atualmente tenho 17 anos e estou cursando Sistemas de Informações. Tenho contato com programação desde os 13 anos, sendo o python a primeira linguagem de programação que tive contato, além de ter facilidade e determinação para aprender assuntos relacionados à tecnologia em geral.
+            </span>
+            </div>
+          </div>
+          <div class="container__imagem">
+            <img class="imagem__sobre" src="sources/davi.jpg">
+          </div>
+        </div>
+
+        <div class="projetos">
+          <div class="projetos__titulo">
+            <span class="projetos__titulo___text">Projetos</span>
+          </div>
+          <div class="site__quotes">
+            <div class="container__quotes">
+              <div class="gif__quotes">
+                <a href="quotes/"><img class="gif_" src="sources/quotes.gif"></a>
+                
+              </div>
+              
+              <div class="sobre__quotes">
+                <div class="project__sobre">
+                  <span class="texto__titulo">Site de Frases</span>
+                  <span class="texto__sobre">Site com objetivo de gerar frases para postar no Twitter, ou para seu uso pessoal!</span>
+                </div>
+                <span class="texto__link"><a class="project__link" href="quotes/">Veja como ficou clicando aqui</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contato">
+        </div>
+      </main>
+
+      <footer>
+        <div class="conteudo__footer">
+          <a href="https://www.instagram.com/daviuee" target="_blank" class="social__networks instagram" href="">
+            <div class="social__container instagram">
+              <i class="fab fa-instagram"></i>
+            </div>
+          </a>           
+          <a href="https://github.com/daviue" target="_blank" class="social__networks github">
+            <div class="social__container github">
+              <i class="fab fa-github"></i>
+            </div>
+          </a>          
+          <a href="mailto:daviue25@gmail.com" class="social__networks gmail">
+            <div class="social__container gmail">
+              <i class="far fa-envelope"></i>
+            </div>
+          </a>          
+        </div>
+      </footer>
+    <!-- scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/particles.min.js"></script>
+    <script src="scripts/app.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYFL2C8MS1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
+    
       gtag('config', 'G-SYFL2C8MS1');
     </script>
-  </head>
-  <body>
-    <header>
-      <div id="particles-js">
-        <div class="darkTheme">
-          <input type="checkbox" id="checkbox__themeSwitch" class="checkbox__themeSwitch">
-          <label for="checkbox__themeSwitch" class="label_themeSwitch">
-            <i class="fas fa-moon"></i>
-            <i class="fas fa-sun"></i>
-            <div class="ball__themeSwitch"></div>
-          </label>
-        </div>
-      </header>
-      <main>
-        <div class="container-main">
-          <span class="myName">Davi Rodrigues</span>
-          <h2 class="webDev">Web Developer</h2>
-        </div>
-      </div>
-      
-      <div class="scrolldown">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </main>
-
-    <!-- scripts -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/particles.min.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="https://kit.fontawesome.com/6bdf452d41.js" crossorigin="anonymous"></script>
-    
   </body>
 </html>

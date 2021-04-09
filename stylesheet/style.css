@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+body {
+  font-size: 16px;
+  background: #dfe4ea;
+  transition: background 0.2s linear;
+}
+
+/* INTRO SITE */
+.introSite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-main {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.myName {
+  color: #2f3542;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4em;
+  margin: 0rem;
+}
+
+.webDev__container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.webDev {
+  color: #2f3542;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2em;
+  margin: 0.5rem 0.2rem;
+}
+
+.webDevFinal {
+  opacity: 0;
+  transition: all 1s ease;
+  margin-top: -50px;
+}
+
+.fade {
+  opacity: 1;
+  margin-top: 0;
+}
+
+#particles-js {
+  height: 100vh;
+}
+
+.scrolldown {
+  position: absolute;
+  bottom: 10px;
+  font-size: 2rem;
+  animation: MoveUpDown 1.5s linear infinite;
+}
+
+/* SOBRE */
+.conteudoSite {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobreMim {
+  height: 60vh;
+  display: flex;
+  padding: 25px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.container__sobre {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 13rem;
+}
+
+.texto__titulo {
+  text-align: center;
+  padding-top: 0;
+  margin-bottom: 0rem;
+  font-size: 2.8rem;
+}
+
+.texto__sobre {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.container__imagem {
+  display: flex;
+  align-items: center;
+}
+
+.imagem__sobre {
+  width: 350px;
+  border-radius: 50%;
+}
+
+/* PROJETOS */
+.projetos {
+  height: 50vh;
+  padding: 25px;
+}
+
+.projetos__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.projetos__titulo___text {
+  font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.site__quotes {
+  box-sizing: border-box;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.container__quotes {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.gif__quotes {
+  width: 50%;
+}
+
+.gif_ {
+  width: 100%;
+  border-radius: 1%;
+}
+
+.sobre__quotes {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 20px;
+}
+
+.project__sobre {
+  height: 8rem;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.texto__link {
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project__link {
+  /*   padding: 0 20px; */
+  text-decoration: none;
+  color: #4b4b4b;
+  font-family: "Ubuntu";
+  font-size: 1.1rem;
+}
+
+.project__link:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+.conteudo__footer {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.social__container {
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 25px;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 15px 15px 30px #a8a8a8, -15px -15px 30px #ffffff;
+  transition: 0.2s ease-in-out;
+}
+
+.social__container:hover {
+  transform: translateY(1px);
+  border-radius: 25px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow: 15px 15px 30px #a8a8a8, -15px -15px 30px #ffffff;
+}
+
+.instagram:hover {
+  color: #e1306c;
+}
+
+.github:hover {
+  color: #4078c0;
+}
+
+.gmail:hover {
+  color: #34a853;
+}
+
+.social__networks {
+  text-decoration: none;
+  color: black;
+  font-size: 3.5rem;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 10px;
+  }
+  50% {
+    bottom: 20px;
+  }
+}
+
+/* RESPONSIVE WEB DESIGN */
+@media screen and (max-width: 600px) {
+  /* INTRO SITE */
+  .container-main {
+    top: 35%;
+    width: 255px;
+    margin: 0 auto;
+  }
+
+  .myName {
+    font-size: 3.5em;
+  }
+
+  .webDev {
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    margin: 0;
+    font-weight: 400;
+  }
+
+  /* SOBRE */
+  .sobreMim {
+    height: 70vh;
+    padding: 0 15px;
+  }
+
+  .container__sobre {
+    width: 100%;
+    align-items: center;
+  }
+
+  .container__texto {
+    height: 50vh;
+  }
+
+  .texto__titulo {
+    font-size: 2.5rem;
+  }
+
+  .texto__sobre {
+    text-indent: 15px;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+
+  .imagem__sobre {
+    display: none;
+  }
+
+  /* PROJETOS */
+  .projetos {
+    padding: 0 10px;
+  }
+
+  .projetos__titulo {
+    text-align: center;
+  }
+
+  .projetos__titulo___text {
+    font-size: 2.5rem;
+  }
+
+  .site__quotes {
+    height: 65vh;
+  }
+
+  .container__quotes {
+    height: 50vh;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+
+  .gif__quotes {
+    width: 100%;
+  }
+
+  .sobre__quotes {
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    height: 25vh;
+  }
+
+  .project__sobre {
+    width: 80%;
+  }
+
+  .texto__link {
+    height: 60%;
+  }
+
+  .project__link {
+    font-size: 1.1rem;
+  }
+
+  /* FOOTER */
+  .conteudo__footer {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 600px) {
+  @media screen and (max-width: 800px) {
+    .projetos {
+      padding: 0 10px;
+    }
+
+    .projetos__titulo {
+      text-align: center;
+      height: 20vh;
+    }
+
+    .projetos__titulo___text {
+      font-size: 2.5rem;
+    }
+
+    .site__quotes {
+      height: 70vh;
+    }
+
+    .container__quotes {
+      height: 50vh;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+
+    .gif__quotes {
+      width: 100%;
+    }
+
+    .sobre__quotes {
+      width: 100%;
+      align-items: center;
+      padding: 0;
+      height: 25vh;
+    }
+
+    .project__sobre {
+      width: 80%;
+    }
+
+    .texto__link {
+      height: 60%;
+    }
+
+    .project__link {
+      font-size: 1.1rem;
+    }
+
+    /* FOOTER */
+    .conteudo__footer {
+      margin-top: 250px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .imagem__sobre {
+      width: 200px;
+    }
+  }
+}

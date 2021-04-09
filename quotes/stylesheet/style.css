@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f1f1f1 url(../sources/bg.gif) no-repeat;
+  background-size: cover;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quote__container {
+  background: rgba(256, 256, 256, 0.85);
+  width: auto;
+  max-width: 750px;
+  padding: 20px 30px;
+  margin: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote__text {
+  font-size: 2.75rem;
+}
+
+.quote__author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.button__container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button__twitter,
+.button__next {
+  width: 75px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background: #85b2ff;
+  outline: none;
+  padding: 0.5rem 1.8rem;
+  box-shadow: 0.1rem 0.2rem 0.2rem rgba(121, 121, 121, 0.65);
+}
+
+.button__twitter:hover,
+.button__next:hover {
+  filter: brightness(50%);
+}
+
+.button__twitter:active,
+.button__next:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+}
+
+.social__container {
+  width: 8rem;
+  height: 3.4rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social__networks {
+  text-decoration: none;
+  color: black;
+  background: rgba(256, 256, 256, 0.95);
+  padding: 10px;
+  font-size: 2rem;
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+
+.social__networks:hover {
+  font-size: 2.1rem;
+}
+
+.loader {
+  border: 0.5rem solid #f3f3f3;
+  border-top: 0.5rem solid #85b2ff;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .quote__text {
+    font-size: 2rem;
+  }
+
+  .quote__author {
+    font-size: 1.5rem;
+  }
+}
