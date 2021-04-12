@@ -275,7 +275,7 @@ body {
 
   /* SOBRE */
   .sobreMim {
-    height: 70vh;
+    height: 60vh;
     padding: 0 15px;
   }
 
@@ -294,8 +294,8 @@ body {
 
   .texto__sobre {
     text-indent: 15px;
-    text-align: left;
-    font-size: 1.3rem;
+    text-align: justify;
+    font-size: 1.2rem;
   }
 
   .imagem__sobre {
@@ -337,7 +337,7 @@ body {
   }
 
   .project__sobre {
-    width: 80%;
+    padding: 0 15px;
   }
 
   .texto__link {
