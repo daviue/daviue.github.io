@@ -104,6 +104,12 @@ body {
   font-weight: 500;
 }
 
+.texto__sobre___eu {
+  text-indent: 15px;
+  text-align: justify;
+  font-size: 1.45rem;
+}
+
 .container__imagem {
   display: flex;
   align-items: center;
@@ -407,7 +413,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 940px) {
     .imagem__sobre {
       width: 200px;
     }
