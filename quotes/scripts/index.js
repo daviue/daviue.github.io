@@ -36,7 +36,7 @@ function newQuote() {
 
 async function getQuotes() {
   loading();
-  const apiUrl = 'https://api.mocki.io/v1/d9931df0';
+  const apiUrl = 'https://run.mocky.io/v3/c2001ed8-c3c6-443b-920c-de0bc8f3f0e8';
   try {
     const response = await fetch(apiUrl);
     apiQuotes = await response.json();
