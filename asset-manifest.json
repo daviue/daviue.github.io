@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/static/js/main.ddf2439e.js",
+    "main.js": "/static/js/main.cbae4d4c.js",
     "static/media/bg.gif": "/static/media/bg.0f98fef00432f0bc0047.gif",
     "static/media/video.mp4": "/static/media/video.c6230105be8e43886e1e.mp4",
     "static/media/quotes_project.jpg": "/static/media/quotes_project.5dd19524f57793ee477c.jpg",
     "static/media/financial_project.png": "/static/media/financial_project.5b436e56b3ac761bf1d2.png",
     "static/media/davi.jpg": "/static/media/davi.48f3383d40d6c6905d29.jpg",
     "index.html": "/index.html",
-    "main.ddf2439e.js.map": "/static/js/main.ddf2439e.js.map"
+    "main.cbae4d4c.js.map": "/static/js/main.cbae4d4c.js.map"
   },
   "entrypoints": [
-    "static/js/main.ddf2439e.js"
+    "static/js/main.cbae4d4c.js"
   ]
 }
